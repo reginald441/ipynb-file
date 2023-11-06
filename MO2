@@ -1,0 +1,19 @@
+# Student Honor Roll App
+# Created by Reginald kargbo 
+
+print("Welcome to the Student Honor Roll App")
+
+while True:
+    last_name = input("Please enter the student's last name (or 'Jalloh' to quit): ")
+    if last_name == 'Jalloh':
+        break
+
+    first_name = input("Please enter the student's first name: ")
+    gpa = float(input("Please enter the student's GPA: "))
+
+    if gpa >= 3.5:
+        print(first_name, last_name, "has made the Dean's List with a GPA of", gpa)
+    elif gpa >= 3.25:
+        print(first_name, last_name, "has made the Honor Roll with a GPA of", gpa)
+
+print("Goodbye!")
