@@ -1,0 +1,19 @@
+# 3.1 How many seconds are in an hour?
+seconds_per_hour = 60 * 60
+print("Number of seconds in an hour:", seconds_per_hour)
+
+# 3.3 How many seconds are in a day?
+seconds_per_day = 24 * seconds_per_hour
+print("Number of seconds in a day:", seconds_per_day)
+
+# 3.4 Calculate seconds per day again and save the result in a variable called seconds_per_day.
+seconds_per_day = 24 * seconds_per_hour
+print("Number of seconds in a day (second calculation):", seconds_per_day)
+
+# 3.5 Divide seconds_per_day by seconds_per_hour using floating-point division (/).
+division_result_float = seconds_per_day / seconds_per_hour
+print("Floating-point division result:", division_result_float)
+
+# 3.6 Divide seconds_per_day by seconds_per_hour using integer division (//).
+division_result_int = seconds_per_day // seconds_per_hour
+print("Integer division result:", division_result_int)
