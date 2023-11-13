@@ -1,0 +1,32 @@
+# Vehicle superclass
+class Vehicle:
+    def __init__(self, vehicle_type):
+        self.vehicle_type = vehicle_type
+
+# Automobile subclass 
+class Automobile(Vehicle):
+    def __init__(self, year, make, model, doors, roof):
+        super().__init__("car") # Set vehicle_type to "car"
+        self.year = year
+        self.make = make 
+        self.model = model
+        self.doors = doors
+        self.roof = roof
+
+# Get user input
+year = input("Enter vehicle year: ")
+make = input("Enter vehicle make: ")
+model = input("Enter vehicle model: ")
+doors = input("Enter number of doors (2 or 4): ")
+roof = input("Enter roof type (solid or sun roof): ")
+
+# Create Automobile object
+car = Automobile(year, make, model, doors, roof)
+
+# Print output
+print("Vehicle type:", car.vehicle_type)  
+print("Year:", car.year)
+print("Make:", car.make)   
+print("Model:", car.model)
+print("Number of doors:", car.doors) 
+print("Type of roof:", car.roof)
